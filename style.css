@@ -9,16 +9,17 @@
   --color-text: rgb(102,102,102);
   --color-background:rgb(255, 255, 255);
   --color-title: rgb(120,120,120);
+  --color-header-title: rgba(255, 255, 255, .5);
   --color-green: rgb(62, 163, 87);
   --color-card-border: rgba(126, 126, 126, .2);
   --color-button-text: rgb(126, 126, 126);
   --color-button-border: rgb(239,239,239);
   --color-footer-text: rgba(255, 255, 255, .5);
-  --color-scrollbar-track:  #D1C3B7;
-  --color-scrollbar-thumb: #836853;
-  --color-nav-background: #7a7073;
-  --color-nav-links: #b6b6b6;
-  --color-nav-links-hover: white;
+  --color-scrollbar-track:  rgb(209,195,183);
+  --color-scrollbar-thumb: rgb(131,104,83);
+  --color-nav-background: rgb(122,112,115);
+  --color-nav-links: rgb(182,182,182);
+  --color-nav-links-hover: rgb(255, 255, 255);
 }
 
 body {
@@ -64,9 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header h1 {
   margin-top: 24px;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.5;
-  color: rgba(255, 255, 255, .5);
+  color: var(--color-header-title);
   font-weight: normal;
 }
 
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.5px;
-  font-size: 20px;
+  font-size: 1.25rem;
 } 
 
 .content section > div:last-child {
@@ -258,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content .portfolio .card h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -296,7 +297,7 @@ footer {
 footer .footer-container {
   width: 100%;
   color: var(--color-footer-text);
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 4px;
 }
 
