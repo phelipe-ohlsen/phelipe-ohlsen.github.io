@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 35%;
   box-sizing: border-box;
-  background-image: url(../images/overlay.png), url(./images/bg.png);
+  background-image: url(../images/overlay.png), url(../images/bg.png);
   background-position: center center;
   background-size: auto, cover;
   text-align: center;
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .under-development::before,
 .under-development::after {
-  content: url(./images/under-development.png);
+  content: url(../images/icons/under-development.png);
 }
 
 /* -------------------- Navbar -------------------- */
