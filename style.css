@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: rgb(102,102,102);
+  --color-background:rgb(255, 255, 255);
+  --color-title: rgb(120,120,120);
+  --color-green: rgb(62, 163, 87);
+  --color-card-border: rgba(126, 126, 126, .2);
+  --color-button-text: rgb(126, 126, 126);
+  --color-button-border: rgb(239,239,239);
+  --color-footer-text: rgba(255, 255, 255, .5);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--color-text);
+  line-height: 1.7;
+  cursor: default;
+  background-color: var(--color-background);
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  margin: 0 0 32px 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--color-title);
+  font-weight: normal;
+  margin: 16px 0;
+}
+
+.current-page {
+  font-weight: 700;
+}
+
+/* -------------------- MAIN HEADER -------------------- */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  box-sizing: border-box;
+  background-image: url(../images/overlay.png), url(./images/bg.png);
+  background-position: center center;
+  background-size: auto, cover;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin-top: 24px;
+  font-size: 28px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .5);
+  font-weight: normal;
+}
+
+.main-header h1 > strong {
+  color: white;
+  font-weight: 700;
+}
+
+/* -------------------- Content -------------------- */
+
+.content {
+  margin-right: 35%;
+  width: 65%;
+}
+
+.content aside {
+  margin: 8px auto 0 auto;
+  width: 90%;
+}
+
+.content aside ul {
+  display: flex;
+}
+
+.content aside ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.content aside ul li img {
+  height: 20px;
+}
+
+.content aside ul li span {
+  margin-left: 4px;
+}
+
+.content section {
+  margin: 120px auto 72px auto;
+  width: 90%;
+}
+
+.content article {
+  margin-bottom: 112px;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+} 
+
+.content section > div:last-child {
+  text-align: center;
+}
+
+.content section div:last-child a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* ----------- bio ----------- */
+
+.content .bio p {
+  text-align: justify;
+}
+
+.content .bio p a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-green);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-green);
+  transition: border 200ms;
+}
+
+.content .bio p a:hover {
+  border: none;
+}
+
+.content .bio p span {
+  font-style: italic;
+}
+
+/* ----------- skills ----------- */
+
+.content .skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.content .skills ul li {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ----------- portfolio ----------- */
+
+.content .portfolio .cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 50px 8px;
+}
+
+.content .portfolio .card {
+  text-align: center;
+}
+
+.content .portfolio .card img {
+  max-height: 284px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 4px;
+}
+
+.content .portfolio .card h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content .portfolio .card:first-child p::before,
+.content .portfolio .card:first-child p::after {
+  content: url(./images/under-development.png);
+}
+
+.content .portfolio a:last-child {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+/* ----------- contact ----------- */
+
+.content .contact address ul {
+  margin-top: 8px;
+  display: flex;
+}
+
+.content .contact address a {
+  text-decoration: none;
+}
+
+.content .contact address a img {
+  height: 28px;
+  margin-right: 16px;
+}
+
+/* ----------- footer ----------- */
+
+footer {
+  position: fixed;
+  width: 35%;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+footer .footer-container {
+  width: 100%;
+  color: var(--color-footer-text);
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+footer .footer-container .footer-etc {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+footer .footer-container .footer-etc a {
+  color: var(--color-footer-text);
+}
+
+footer .footer-container .footer-etc ul {
+  display: flex;
+}
+
+footer .footer-container .footer-etc ul li {
+  margin-left: 16px;
+}
+
+footer .footer-container .footer-etc span {
+  margin-right: 16px;
+}
+
+/* ----------- button ----------- */
+
+.button-container {
+  text-align: right;
+}
+
+.button {
+  color: var(--color-button-text);
+  border: 2px solid var(--color-button-border);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+a.button:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
